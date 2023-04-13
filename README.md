@@ -3,7 +3,7 @@
 Deploying a simple Flask api application on a minikube cluster
 FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
 
-##Prerequisites:
+## Prerequisites:
 
 1. Docker Installed in your system
 2. Up and running Minikube cluster
@@ -47,7 +47,7 @@ Using 'Dockerfile'
 
 - docker push Yourdockerhubrepo/imagename:tagname
 
-##Kubernetes Configuration files
+## Kubernetes Configuration files
 
 All the kubernetes configuration files are in the folder ./Kubernetes
 
@@ -59,26 +59,26 @@ Deployment spec for containers should be updated in case you trying a different 
 
 - kubectl apply -f .
 
-###To check all the resources created 
+### To check all the resources created 
 
 - kubectl get all
 
-###To enter the pod container we can use the below command 
+### To enter the pod container we can use the below command 
 
 - kubectl exec -it podname bash
 
-###To exit the pod container we can use the below command 
+### To exit the pod container we can use the below command 
 - exit
 
-###Deleting any resource
+### Deleting any resource
 kubectl delete resource name
 
-###Forward a local port to a port on the Pod
+### Forward a local port to a port on the Pod
 kubectl port-forward allows using resource name, such as a pod name, to select a matching pod to port forward to.
 Connections made to local port 8080 are forwarded to port 80 of the Pod
 
 - kubectl port-forward podname 8080:80
 
-###Accessing our application
+### Accessing our application
 
 - http://localhost:8080/
