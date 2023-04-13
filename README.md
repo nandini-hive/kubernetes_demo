@@ -39,7 +39,7 @@ This FastAPI application file returns the Hostname and Environment variabe set t
 
 - uvicorn main:app --reload
 
-##Steps to build and push the container image in Dockerhub
+## Steps to build and push the container image in Dockerhub
 
 Using 'Dockerfile'
 
