@@ -35,9 +35,6 @@ Latest versions of fastapi and uvicorn
 `app/main.py`:
 This FastAPI application file returns the Hostname and Environment variabe set the container pod.
 
-### We can test the application locally using the below command
-
-- uvicorn main:app --reload
 
 ## Steps to build and push the container image in Dockerhub
 
